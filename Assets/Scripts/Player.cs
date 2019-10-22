@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float padding = 1f;
 
     float xMin;
     float xMax;
@@ -21,10 +22,10 @@ public class Player : MonoBehaviour
     private void SetUpMoveBoundaries()
     {
         Camera gameCamera = Camera.main;
-        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0,0,0)).x; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
-        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x;
-        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
-        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y;
+        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0,0,0)).x + padding; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
+        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
+        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
+        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
     }
 
     // Update is called once per frame
