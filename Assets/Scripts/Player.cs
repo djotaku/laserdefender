@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    // config params
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
+    [SerializeField] GameObject laserPrefab;
+    [SerializeField] float projectileSpeed = 10f;
+
 
     float xMin;
     float xMax;
@@ -19,19 +23,22 @@ public class Player : MonoBehaviour
         SetUpMoveBoundaries();
     }
 
-    private void SetUpMoveBoundaries()
-    {
-        Camera gameCamera = Camera.main;
-        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0,0,0)).x + padding; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
-        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
-        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
-        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
-    }
-
     // Update is called once per frame
     void Update()
     {
         Move();
+        Fire();
+    }
+
+    private void Fire()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject laser = Instantiate(laserPrefab, 
+                transform.position, 
+                Quaternion.identity) as GameObject; //Quartnernion.identity means use the rotation it already has; 
+            laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
+        }
     }
 
     private void Move()
@@ -44,5 +51,13 @@ public class Player : MonoBehaviour
         transform.position = new Vector2(newXPos, newYPos);
         //transform.Translate(deltaX, deltaY, 0); // I think translate is needed for controllers to work, based on video and Unity documentation, but still not working for me
         
+    }
+    private void SetUpMoveBoundaries()
+    {
+        Camera gameCamera = Camera.main;
+        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
+        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
+        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding; // this is a different way of figuring out game space than in Block Destroyer where we divided by screenWidthUnits
+        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
     }
 }
