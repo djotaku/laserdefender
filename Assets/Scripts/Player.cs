@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
         var newYPos = transform.position.y + deltaY;
         transform.position = new Vector2(newXPos, newYPos);
-        //transform.Translate(deltaX, deltaY, 0);
+        //transform.Translate(deltaX, deltaY, 0); // I think translate is needed for controllers to work, based on video and Unity documentation, but still not working for me
         
     }
 }
