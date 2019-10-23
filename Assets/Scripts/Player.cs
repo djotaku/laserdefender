@@ -66,7 +66,6 @@ public class Player : MonoBehaviour
         var newXPos = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
         var newYPos = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
         transform.position = new Vector2(newXPos, newYPos);
-        //transform.Translate(deltaX, deltaY, 0); // I think translate is needed for controllers to work, based on video and Unity documentation, but still not working for me
         
     }
     private void SetUpMoveBoundaries()
