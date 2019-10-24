@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &134354193 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1329711752363173493, guid: 2334fcaf06eba3c4ea616a623730c65f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1329711753019518836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &199168695 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1329711753540707067, guid: 2334fcaf06eba3c4ea616a623730c65f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1329711753019518836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &259663531
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +202,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d4bca3c7d15b742b0c210e0ea5f88c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &720494756 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1329711753018116959, guid: 2334fcaf06eba3c4ea616a623730c65f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1329711753019518836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1329702523
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +341,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3813432018533237170, guid: 57d64a19c56d06347b0bcb50a282afeb,
+        type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 199168695}
+    - target: {fileID: -3813432018533237170, guid: 57d64a19c56d06347b0bcb50a282afeb,
+        type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 720494756}
+    - target: {fileID: -3813432018533237170, guid: 57d64a19c56d06347b0bcb50a282afeb,
+        type: 3}
+      propertyPath: waypoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 134354193}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d64a19c56d06347b0bcb50a282afeb, type: 3}
 --- !u!1001 &1329711753019518836
