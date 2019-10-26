@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyPathing : MonoBehaviour
 {
-
-    [SerializeField] List<Transform> waypoints; // why type transform? Because we're looking at the position
+    [SerializeField] WaveConfig waveConfig;
+    List<Transform> waypoints; // why type transform? Because we're looking at the position
     [SerializeField] float moveSpeed = 2f;
 
     int waypointIndex = 0;
@@ -13,6 +13,7 @@ public class EnemyPathing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        waypoints = waveConfig.GetWayPoints();
         transform.position = waypoints[waypointIndex].transform.position;
     }
 
