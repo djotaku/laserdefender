@@ -21,7 +21,6 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         CountdownAndShoot();
-        
     }
 
     private void CountdownAndShoot()
