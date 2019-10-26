@@ -3,7 +3,7 @@ A Galaxian/Galaga clone from a Unity 2D Udemy Class I'm taking
 
 # Current Progress
 
-https://youtu.be/5qJq63xVyww
+https://youtu.be/3ZfCeJVKayA
 
 # What I've Done Since Finishing this section of the class
 
