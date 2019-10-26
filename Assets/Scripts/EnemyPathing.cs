@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyPathing : MonoBehaviour
 {
-    [SerializeField] WaveConfig waveConfig;
+    WaveConfig waveConfig;
     List<Transform> waypoints; // why type transform? Because we're looking at the position
-    [SerializeField] float moveSpeed = 2f;
+    
 
     int waypointIndex = 0;
 
@@ -23,12 +23,17 @@ public class EnemyPathing : MonoBehaviour
         Move();
     }
 
+    public void SetWaveConfig(WaveConfig waveConfig)
+    {
+        this.waveConfig = waveConfig; // first one is the one that belongs to the class; like self in Python; In visual studio the color of the variables helps you see which is which.
+    }
+
     private void Move()
     {
         if (waypointIndex <= waypoints.Count - 1)
         {
             var targetPosition = waypoints[waypointIndex].transform.position;
-            var movementThisFrame = moveSpeed * Time.deltaTime;
+            var movementThisFrame = waveConfig.GetMoveSpeed() * Time.deltaTime;
             transform.position = Vector2.MoveTowards
                 (transform.position, targetPosition, movementThisFrame);
 
