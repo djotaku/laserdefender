@@ -3,7 +3,13 @@ A Galaxian/Galaga clone from a Unity 2D Udemy Class I'm taking
 
 # Current Progress
 
-https://youtu.be/3ZfCeJVKayA
+https://youtu.be/hIEFots74VE
+
+Also a couple funny videos:
+
+I forgot to set the collider as a trigger: https://youtu.be/GI_9VChCHVE
+
+Hilarious enemy shooting pattern: https://youtu.be/e5PS3fW1Of0
 
 # What I've Done Since Finishing this section of the class
 
