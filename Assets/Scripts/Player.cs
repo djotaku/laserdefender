@@ -112,4 +112,9 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSoundVolume);
     }
+
+    public int GetHealth()
+    {
+        return health;
+    }
 }

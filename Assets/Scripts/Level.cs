@@ -15,6 +15,7 @@ public class Level : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene("Game"); // obviously brittle if name changes
+        FindObjectOfType<GameSession>().ResetGame();
     }
 
     public void LoadGameOver()
