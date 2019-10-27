@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9190364052833355669}
   - component: {fileID: -4097081362727978064}
   - component: {fileID: 2168578490837876204}
+  - component: {fileID: -8087388572653876377}
   m_Layer: 11
   m_Name: Enemy Bomb
   m_TagString: Untagged
@@ -133,3 +134,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.185
+--- !u!114 &-8087388572653876377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151823360926571799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db4644257e43e7041ac731208a1aca1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedOfSpin: 360
