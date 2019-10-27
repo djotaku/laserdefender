@@ -28,3 +28,7 @@ N/A - still working on this module in the class
   method where we set a delay between bullets fired out.
 
   - Learned to spawn enemy waves in a 2D game
+
+   - Learned both how to use advanced particle effects for the explosions and for the starfields that give a parallax view
+
+   - Learned about changing the render layer order to keep the laser from appearing on top of the player or enemy launching it.
