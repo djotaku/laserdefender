@@ -7,6 +7,7 @@ Get binaries from this repo (click on "releases")
 
 Play on the net via WebGL:
 http://server.ericsbinaryworld.com/WebGL/LaserDefenderWebGL/
+ (On Linux (at least for me in Fedora 30) only was able to hear the music when playing in Google Chrome. Firefox had sound effects. Vivaldi did not have any sounds)
 
 A video of me playing version 1.0:
 https://youtu.be/OJpaR-YUXxk
