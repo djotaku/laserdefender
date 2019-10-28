@@ -18,6 +18,14 @@ I forgot to set the collider as a trigger: https://youtu.be/GI_9VChCHVE
 
 Hilarious enemy shooting pattern: https://youtu.be/e5PS3fW1Of0
 
+# Visual and Audio Credits
+
+Sprites: Kenny Assets. Specifically these: https://kenney.nl/assets/space-shooter-redux  - Available under Creative Commons 0 license (AKA Public Domain)
+
+Sound FX: Kenny Assets. Specifically these: https://kenney.nl/assets/digital-audio - Available under Creative Commons 0 license (AKA Public Domain)
+
+Music: NES Shooter Mysic by SketchyLogic (here: https://opengameart.org/content/nes-shooter-music-5-tracks-3-jingles) - Available under Creative Commons 0 license (AKA Public Domain)
+
 # What I've Done Since Finishing this section of the class
 
 N/A - stay tuned!
