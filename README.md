@@ -6,7 +6,7 @@ A Galaxian/Galaga clone from a Unity 2D Udemy Class I'm taking
 Get binaries from this repo (click on "releases")
 
 Play on the net via WebGL:
-
+http://server.ericsbinaryworld.com/WebGL/LaserDefenderWebGL/
 
 A video of me playing version 1.0:
 https://youtu.be/OJpaR-YUXxk
