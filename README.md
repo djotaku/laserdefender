@@ -3,9 +3,13 @@ A Galaxian/Galaga clone from a Unity 2D Udemy Class I'm taking
 
 ![Screenshot](https://github.com/djotaku/laserdefender/blob/master/Assets/Screenshots/Screenshot.png)
 
-# Current Progress
+Get binaries from this repo (click on "releases")
 
-https://youtu.be/hIEFots74VE
+Play on the net via WebGL:
+
+
+A video of me playing version 1.0:
+https://youtu.be/OJpaR-YUXxk
 
 Also a couple funny videos:
 
@@ -15,7 +19,7 @@ Hilarious enemy shooting pattern: https://youtu.be/e5PS3fW1Of0
 
 # What I've Done Since Finishing this section of the class
 
-N/A - still working on this module in the class
+N/A - stay tuned!
 
 # What I learned in this module of the class
 
