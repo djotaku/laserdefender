@@ -1,7 +1,7 @@
 # Laser Defender
 A Galaxian/Galaga clone from a Unity 2D Udemy Class I'm taking
 
-![Screenshot](https://github.com/djotaku/laserdefender/blob/master/Assets/Screenshots/Screenshot.png)
+![Screenshot](https://github.com/djotaku/laserdefender/raw/master/Assets/Screenshots/Screenshot.png)
 
 Get binaries from this repo (click on "releases")
 
