@@ -1,12 +1,14 @@
 # Laser Defender
-A Galaxian/Galaga clone from a Unity 2D Udemy Class I'm taking
+*Note: I'm going to archive the Github Repo. I am not sure I'm ever getting back to this codebase, but if I do, it will be at http://code.ericmesa.com/djotaku/laserdefender*
+
+A Galaxian/Galaga clone from an older version of this [Unity 2D Class](https://gamedev.tv/courses/unity6-complete-2d)
 
 ![Screenshot](https://github.com/djotaku/laserdefender/raw/master/Assets/Screenshots/Screenshot.png)
 
 Get binaries from this repo (click on "releases")
 
 Play on the net via WebGL:
-http://server.ericsbinaryworld.com/WebGL/LaserDefenderWebGL/
+(will have to attempt to recover from backups)
  (On Linux (at least for me in Fedora 30) only was able to hear the music when playing in Google Chrome. Firefox had sound effects. Vivaldi did not have any sounds)
 
 A video of me playing version 1.0:
